@@ -1,15 +1,12 @@
 import PropTypes from 'prop-types';
-import { FaTrashAlt } from 'react-icons/fa';
 import c from './ContactList.module.css';
+import ContactsEl from '../ContactElement/ContactElement';
 
 const Contacts = ({ contacts, onDeleteContact }) => (
   <ul className={c.list}>
     {contacts.map(({ id, name, number }) => (
       <li key={id} className={c.item}>
-        {name}: {number}
-        <button className={c.btn} type="button" onClick={() => onDeleteContact(id)}>
-          <FaTrashAlt size="20px" />
-        </button>
+        <ContactsEl name={name} number={number} onDeleteContact={() => onDeleteContact(id)} />
       </li>
     ))}
   </ul>

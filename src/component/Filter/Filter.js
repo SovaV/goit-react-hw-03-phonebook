@@ -10,6 +10,6 @@ const Filter = ({ value, onChange }) => (
 );
 Filter.propTypes = {
   onChange: PropTypes.func.isRequired,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  value: PropTypes.oneOfType([PropTypes.string]),
 };
 export default Filter;
