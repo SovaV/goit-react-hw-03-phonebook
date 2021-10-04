@@ -1,0 +1,16 @@
+.btn {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+.list {
+  text-align: initial;
+  display: inline-block;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
